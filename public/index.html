@@ -7,34 +7,96 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="m-10 flex items-center flex-col">
+    <div class="m-4 xl:m-10 flex items-center flex-col">
       <div class="text-[#2D2D2D] text-center">
-        <h1 class="font-bold text-3xl pb-3">Benefits</h1>
-        <p class="text-xl">
+        <h1 class="font-bold text-lg xl:text-3xl">Benefits</h1>
+        <p class="text-xs xl:text-xl my-3">
           Benefits neque porro quisquam est qui dolorem ipsum quia dolor sit
           amet, consectetur
         </p>
       </div>
 
-      <div class="flex flex-row my-5 items-center justify-around w-3/4">
+      <div
+        class="flex flex-col xl:flex-row my-5 items-center justify-around w-screen xl:w-3/4"
+      >
         <div
-          class="w-1/2 h-[292px] overflow-hidden px-6 py-6 rounded-2xl text-white bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#777779] via-[#555557] to-[#1E1E1F] border-2 border-gray-700"
+          class="w-11/12 xl:w-1/2 h-[260px] xl:h-[307px] overflow-hidden px-6 py-6 rounded-2xl text-white bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#777779] via-[#555557] to-[#1E1E1F] border-2 border-gray-700 shadow-xl xl:-mt-5"
         >
-          <p class="text-sm">EMI & MORE</p>
-          <h1 class="font-bold">Balance Transfer</h1>
-          <p class="text-sm">
+          <p class="text-xs xl:text-sm">EMI & MORE</p>
+          <p class="text-sm xl:text-xl font-bold">Balance Transfer</p>
+          <p class="text-xs xl:text-sm">
             View all transactions made on your account in the last 24 months.
           </p>
-          <img
-            class="w-60 m-auto -rotate-[24deg]"
-            src="../assets/balance transfer.png"
-            alt=""
-          />
+          <div class="flex items-start xl:items-end">
+            <img
+              class="w-48 xl:w-60 m-auto -rotate-[24deg]"
+              src="../assets/balance transfer.png"
+              alt=""
+            />
+            <button
+              class="text-[#00B1F2] mt-28 xl:mb-10 opacity-85 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
+            >
+              >
+            </button>
+          </div>
         </div>
-        <div class="ml-10 w-1/2">
-          <div class="bg-zinc-500 mb-5">payments</div>
-          <div class="bg-gray-500">card features</div>
+
+        <div
+          class="flex justify-center xl:flex-col gap-3 mt-5 xl:ml-10 w-11/12 xl:w-1/2"
+        >
+          <div
+            class="h-[14rem] w-full xl:h-[146px] overflow-hidden mb-5 bg-gradient-to-r from-[#D4F5FE] to-[#637986] rounded-2xl px-6 py-6 relative shadow-xl"
+          >
+            <p class="text-xs xl:text-sm text-[#00B1F2] font-semibold">
+              PAYMENTS
+            </p>
+            <p class="text-xs xl:text-sm font-bold">Easy Bill Pay</p>
+            <p class="hidden xl:block xl:text-sm text-[#757583] xl:w-[18rem]">
+              Pay your utility bills with convenience and on time.
+            </p>
+
+            <img
+              class="xl:w-48 xl:m-auto absolute xl:left-[19rem] xl:top-[5px] rotate-[25deg]"
+              src="../assets/bill pay.png"
+              alt=""
+            />
+            <button
+              class="text-[#00B1F2] absolute left-[7rem] top-[11rem] xl:left-[29rem] xl:top-[6rem] opacity-90 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
+            >
+              >
+            </button>
+          </div>
+
+          <div
+            class="w-full h-[14rem] xl:h-[146px] overflow-hidden mb-5 bg-white rounded-2xl px-6 py-6 relative shadow-xl"
+          >
+            <p class="text-xs xl:text-sm text-[#00B1F2] font-semibold">
+              CARD FEATURES
+            </p>
+            <p class="text-xs xl:text-sm font-bold">Contactless Pay</p>
+            <p class="hidden xl:block xl:text-sm text-[#757583] w-[18rem]">
+              Make instant, easy and safe payments with a tap of your card or
+              smartphonexmxmxmxmx.
+            </p>
+
+            <img
+              class="w-20 xl:w-24 m-4 xl:m-auto absolute xl:left-[22rem] xl:top-[3px]"
+              src="../assets/Contactless.png"
+              alt=""
+            />
+            <button
+              class="text-[#00B1F2] absolute left-[7rem] top-[11rem] lg:left-[29rem] xl:top-[6rem] opacity-95 font-bold text-xl bg-[#FFFFFF] w-8 h-8 rounded-full"
+            >
+              >
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="border-[3px] px-6 py-0 xl:py-1 border-[#00B1F2] rounded-2xl">
+        <button class="text-sm xl:text-xl text-[#00B1F2]">
+          View all benefits
+        </button>
       </div>
     </div>
   </body>
