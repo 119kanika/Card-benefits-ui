@@ -3,21 +3,21 @@ let details = [
     "EMI & MORE",
     "Balance Transfer",
     "View all transactions made on your account in the last 24 months.",
-    "../assets/balancetransfer.png",
+    "./assets/balancetransfer.png",
     "w-48 lg:w-60 m-auto -rotate-[24deg]"
   ],
   [
     "PAYMENTS",
     "Easy Bill Pay",
     "Pay your utility bills with convenience and on time.",
-    "../assets/billpay.png",
+    "./assets/billpay.png",
     "w-48 lg:w-42 m-auto rotate-[20deg]"
   ],
   [
     "CARD FEATURES",
     "Contactless Pay",
     "Make instant, easy and safe payments with a tap of your card or smartphonexmxmxmxmx.",
-    "../assets/Contactless.png",
+    "./assets/Contactless.png",
     "w-20 lg:w-28 m-auto "
   ]
 ];
