@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./public/style.css" />
+    <style>
+      .button-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .button-container.left {
+        left: 10px;
+      }
+      .button-container.right {
+        right: 10px;
+      }
+      .fixed-white-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="m-4 xl:m-10 flex items-center flex-col">
@@ -15,7 +33,7 @@
           amet, consectetur
         </p>
         <p class="block lg:hidden text-xs xl:text-xl my-3">
-          Explore the featurs that make us different from other card companies
+          Explore the features that make us different from other card companies
           in the market
         </p>
       </div>
@@ -31,11 +49,11 @@
           <p class="text-xs xl:text-sm description z-10">
             View all transactions made on your account in the last 24 months.
           </p>
-          <div class="absolute mt-16">
-            <button class="font-bold text-xl" onclick="goPrev()"><</button>
+          <div class="button-container left">
+            <button class="font-bold text-xl" onclick="goPrev()">&#60;</button>
           </div>
-          <div class="absolute right-7 mt-16">
-            <button class="font-bold text-xl" onclick="goNext()">></button>
+          <div class="button-container right">
+            <button class="font-bold text-xl" onclick="goNext()">&#62;</button>
           </div>
           <div class="flex items-start xl:items-end">
             <img
@@ -44,9 +62,9 @@
               alt=""
             />
             <button
-              class="text-[#00B1F2] mt-[7.5rem] xl:mb-10 opacity-85 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
+              class="text-[#00B1F2] fixed-white-button opacity-85 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
             >
-              >
+              &#62;
             </button>
           </div>
 
@@ -77,7 +95,7 @@
             <button
               class="text-[#00B1F2] absolute bottom-[1rem] right-[1rem] opacity-90 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
             >
-              >
+              &#62;
             </button>
           </div>
 
@@ -90,7 +108,7 @@
             <p class="text-xs xl:text-lg font-bold">Contactless Pay</p>
             <p class="hidden md:block md:text-sm text-[#757583] w-[18rem]">
               Make instant, easy and safe payments with a tap of your card or
-              smartphonexmxmxmxmx.
+              smartphone.
             </p>
 
             <img
@@ -101,7 +119,7 @@
             <button
               class="text-[#00B1F2] absolute bottom-[1rem] right-[1rem] opacity-90 font-extrabold bg-[#FFFFFF] w-8 h-8 rounded-full"
             >
-              >
+              &#62;
             </button>
           </div>
         </div>
