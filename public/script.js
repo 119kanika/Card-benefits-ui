@@ -18,32 +18,20 @@ let details = [
     "Contactless Pay",
     "Make instant, easy and safe payments with a tap of your card or smartphonexmxmxmxmx.",
     "../assets/Contactless.png",
-    "w-20 lg:w-28 m-auto"
+    "w-20 lg:w-28 m-auto "
   ]
 ];
 
-const sliderContainer = document.querySelector(".slider-container")
+
 const title = document.querySelector(".title");
 const subTitle = document.querySelector(".subTitle");
 const description = document.querySelector(".description");
 const image = document.querySelector(".image");
+const sliderIndicator = document.querySelector(".slider-indicator")
 
+// sliderIndex = document.createElement("div");
+// sliderIndex.className = "w-10 h-3 bg-pink-600 rounded-full"
 
-// function setItems() {
-
-//   details.forEach((item) => {
-//     title.innerText = item[0];
-//     subTitle.innerText = item[1];
-//     description.innerText = item[2];
-//     image.src = item[3];
-
-//     console.log(title);
-//   });
-// }
-
-// const goPrev = () => {
-//     console.log("prev");
-// }
 
 let currentSlideIndex = 0;
 
@@ -53,7 +41,22 @@ function updateSlide(index) {
     description.innerText = details[index][2];
     image.src = details[index][3];
     image.className = details[index][4]
-    currentSlideIndex = index; // Update current slide tracker
+    currentSlideIndex = index; // Update current slide tracker 
+
+    updateSliderIndicator();
+  }
+
+  function updateSliderIndicator() {
+    sliderIndicator.innerHTML = "";
+
+    for(let i=0; i<details.length; i++){
+        const Dot = document.createElement("div")
+        Dot.className = "w-2 h-2 rounded-full border-2 border-[#D5D5EA] mr-2"
+        if(i === currentSlideIndex){
+            Dot.classList.add("bg-blue-500");
+        }
+        sliderIndicator.appendChild(Dot);
+    }
   }
   
   function goPrev() {
@@ -68,3 +71,4 @@ function updateSlide(index) {
   
   // Initial slide display
   updateSlide(currentSlideIndex);
+  updateSliderIndicator();
