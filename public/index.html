@@ -20,16 +20,22 @@
         class="flex flex-col xl:flex-row my-5 items-center justify-around w-screen xl:w-3/4"
       >
         <div
-          class="w-11/12 xl:w-1/2 h-[260px] xl:h-[307px] overflow-hidden px-6 py-6 rounded-2xl text-white bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#777779] via-[#555557] to-[#1E1E1F] border-2 border-gray-700 shadow-xl xl:-mt-5"
+          class="w-11/12 xl:w-1/2 h-[260px] xl:h-[307px] overflow-hidden px-6 py-6 rounded-2xl text-white bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#777779] via-[#555557] to-[#1E1E1F] border-2 border-gray-700 shadow-xl xl:-mt-5 relative transition-transform ease-out duration-100"
         >
-          <p class="text-xs xl:text-sm">EMI & MORE</p>
-          <p class="text-sm xl:text-xl font-bold">Balance Transfer</p>
-          <p class="text-xs xl:text-sm">
+          <p class="text-xs xl:text-sm title">EMI & MORE</p>
+          <p class="text-sm xl:text-xl font-bold subTitle">Balance Transfer</p>
+          <p class="text-xs xl:text-sm description z-10">
             View all transactions made on your account in the last 24 months.
           </p>
+          <div class="absolute mt-16">
+            <button class="font-bold text-xl" onclick="goPrev()"><</button>
+          </div>
+          <div class="absolute right-7 mt-16">
+            <button class="font-bold text-xl" onclick="goNext()">></button>
+          </div>
           <div class="flex items-start xl:items-end">
             <img
-              class="w-48 xl:w-60 m-auto -rotate-[24deg]"
+              class="w-48 xl:w-60 m-auto -rotate-[24deg] z-0 image"
               src="../assets/balance transfer.png"
               alt=""
             />
@@ -99,5 +105,7 @@
         </button>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
