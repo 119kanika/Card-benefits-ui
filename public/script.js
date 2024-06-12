@@ -3,14 +3,14 @@ let details = [
     "EMI & MORE",
     "Balance Transfer",
     "View all transactions made on your account in the last 24 months.",
-    "../assets/balance transfer.png",
+    "../assets/balancetransfer.png",
     "w-48 lg:w-60 m-auto -rotate-[24deg]"
   ],
   [
     "PAYMENTS",
     "Easy Bill Pay",
     "Pay your utility bills with convenience and on time.",
-    "../assets/bill pay.png",
+    "../assets/billpay.png",
     "w-48 lg:w-42 m-auto rotate-[20deg]"
   ],
   [
