@@ -1,0 +1,67 @@
+.button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-container.left {
+  left: 10px;
+}
+.button-container.right {
+  right: 10px;
+}
+.fixed-white-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.hover-container {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.hover-container:hover {
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.3);
+}
+.hover-container img {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+.hover-container:hover img {
+  transform: scale(1.1);
+}
+.topBlur {
+  position: absolute;
+  overflow: hidden;
+  width: 30vh;
+  height: 30vh;
+  top: 0px;
+  left: 0px;
+  border-radius: 100px;
+  background: rgb(58 192 255 / 75%);
+  filter: blur(50px);
+  z-index: 0;
+  animation-name: blurCircle;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blurCircle {
+  0% {
+    top: 20px;
+    left: 20px;
+  }
+  50% {
+    left: 80%;
+    top: 30%;
+  }
+  100% {
+    top: 60%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .topBlur {
+    display: none;
+  }
+}
